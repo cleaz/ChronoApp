@@ -1,0 +1,56 @@
+@media screen and (orientation: portrait){
+    body{
+        background-image: url("chrono_portrait.jpg");
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+        background-position:center center;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-color:#000;
+    }
+    button {
+        width: 25%;
+        padding: 3%;
+        margin: 3%;
+    }
+    #buttons {
+        height: 25%;
+    }
+    #chrono {
+        font-size: 750%;
+        margin: 10% 30% 75% 10%;
+    }
+}
+
+@media screen and (orientation: landscape){
+    body{
+        background-image: url("chrono_landscape.jpg");
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+        background-position:center center;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-color:#000;
+    }
+    #chrono {
+        font-size: 1500%;
+        width: 50%;
+        margin-top: 15%;
+        float: right;
+        text-align: center;
+    }
+    #buttons {
+        width: 50%;
+        float: left;
+    }
+    button {
+        font-size: 220%;
+        width: 65%;
+        padding: 3%;
+        margin: 8%;
+    }
+}
