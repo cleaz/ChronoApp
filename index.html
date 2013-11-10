@@ -2,18 +2,22 @@
 <html>
 <head>
     <link rel="shortcut icon" href="chrono.png">
-    <link href="chronoapp.css" rel="stylesheet" type="text/css">
+    <link href="chronoapp.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="landscape.css" rel="stylesheet" media="screen and (orientation: landscape) and (max-width:480px)" />
+    <link href="portrait.css"  rel="stylesheet" media="screen and (orientation: portrait)" />
     <script src="chronoapp.js"></script>
     <title id="title">Chronoapp: </title>
 </head>
 <body>
-<div id="timer">
-    <label id="chrono">0</label>
-</div>
-<div id="buttons">
-    <button id="start" onclick="startTimer()">Start</button>
-    <button id="pause" onclick="holdTimer()">Pause</button>
-    <button id="continue" onclick="continueTimer()">Continue</button>
+<div id="container">
+	<div id="timer" class="timer">
+		<p id="chrono" class="timer">0</p>
+	</div>
+	<div id="buttons">
+		<button id="start" class="button" onclick="startTimer()">Start</button>
+		<button id="pause" class="button" onclick="holdTimer()">Pause</button>
+		<button id="continue" class="button" onclick="continueTimer()">Continue</button>
+	</div>
 </div>
 </body>
 </html>
